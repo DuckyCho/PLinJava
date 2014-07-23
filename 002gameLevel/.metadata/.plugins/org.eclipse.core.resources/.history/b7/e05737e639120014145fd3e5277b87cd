@@ -1,0 +1,7 @@
+package game;
+
+public class Player implements Gamelevel  {
+	
+	public String name;
+	
+}

@@ -1,0 +1,17 @@
+package game;
+
+public abstract class GameLevel {
+
+	abstract void simpleAttack();
+	abstract void turnAttack();
+	abstract void flyingAttack();
+	abstract String getLevel();
+	
+	public final void play(){
+		
+		simpleAttack();
+		turnAttack();
+		flyingAttack();
+	}
+	
+}

@@ -1,0 +1,11 @@
+package game;
+
+public class Player   {
+	
+	public String name;
+	public GameLevel playerLevel;
+	
+	public Player(){this.name="Unnamed";}
+	public Player(String name){this.name=name;}
+	
+}

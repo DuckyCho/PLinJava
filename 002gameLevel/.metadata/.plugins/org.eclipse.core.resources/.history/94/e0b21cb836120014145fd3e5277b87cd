@@ -1,0 +1,12 @@
+package game;
+
+public class Player {
+	
+	private static Player p1 = new Player();
+	
+	
+	public static Player getInstance(){
+		return p1;
+	}
+	
+}

@@ -1,0 +1,28 @@
+package game;
+
+public abstract class GameLevel {
+
+	
+	abstract void turnAttack();
+	abstract void flyingAttack();
+	abstract int getLevel();
+	
+	public void simpleAttack(int count){
+		String attackPrint = new String();
+		for (int i = 0 ; i < count ; i++){
+			attackPrint += "메롱~~~";
+		}
+		System.out.println("Level"+getLevel()+ " simple attack : ");
+	}
+	
+	public void unavailable(){
+		System.out.println("레벨이 낮아 불가능합니다.");
+	}
+	
+	public final void play(){
+		
+		turnAttack();
+		flyingAttack();
+	}
+	
+}

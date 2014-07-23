@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;game.Gamelevel&apos; to &apos;GameLevel&apos;&#x0A;- Original project: &apos;game&apos;&#x0A;- Original element: &apos;game.Gamelevel&apos;&#x0A;- Renamed element: &apos;game.GameLevel&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Gamelevel&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;game{Gamelevel.java[Gamelevel" matchStrategy="1" name="GameLevel" qualified="false" references="true" similarDeclarations="false" stamp="1406100177521" textual="false" version="1.0"/>
+</session>

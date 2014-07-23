@@ -1,0 +1,17 @@
+package game;
+
+public class Player {
+	
+	private static Player p1;
+	
+	public Player(){Player.makePlayer();}
+	
+	private void makePlayer(){
+		p1 = new Player();
+	}
+	
+	public static Player getInstance(){
+		return p1;
+	}
+	
+}

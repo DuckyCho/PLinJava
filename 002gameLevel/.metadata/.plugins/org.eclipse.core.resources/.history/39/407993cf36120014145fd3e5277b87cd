@@ -1,0 +1,12 @@
+package game;
+
+public class Board extends Player{
+
+	public Player(){}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}
