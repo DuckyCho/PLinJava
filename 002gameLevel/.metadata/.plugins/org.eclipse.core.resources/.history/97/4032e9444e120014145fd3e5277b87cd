@@ -1,0 +1,24 @@
+package game;
+
+public abstract class GameLevel {
+
+	abstract int gamelevelInt; 
+	abstract void simpleAttack();
+	abstract void turnAttack();
+	abstract void flyingAttack();
+
+	public String unavailable(){
+		return "불가능";
+	}
+	
+	public int getGamelevel(){
+		return this.gamelevelInt;
+	}
+	
+	public final void play(){
+		simpleAttack();
+		turnAttack();
+		flyingAttack();
+	}
+	
+}

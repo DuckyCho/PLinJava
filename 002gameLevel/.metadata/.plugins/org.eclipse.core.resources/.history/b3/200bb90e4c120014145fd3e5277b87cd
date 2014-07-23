@@ -1,0 +1,39 @@
+package game;
+
+public class GameLevel1 extends GameLevel{
+
+	
+	private static GameLevel1 l1 = new GameLevel1();
+	
+	private GameLevel1(){}
+	
+	public static GameLevel1 getInstance(){
+		System.out.println("========level1 start ===========");
+		return l1;
+	}
+	
+	
+	Override
+	void simpleAttack() {
+		for(int i = 0 ; i<1;i++){
+			
+		}
+		
+	}
+
+	@Override
+	void turnAttack() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void flyingAttack() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+
+}

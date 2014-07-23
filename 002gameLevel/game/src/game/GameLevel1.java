@@ -2,8 +2,7 @@ package game;
 
 public class GameLevel1 extends GameLevel{
 
-	private static String levelStr = new String("level 1");
-	private static int levelInt = 1;
+	private static String level = new String("Level 1");
 	private static GameLevel1 l1 = new GameLevel1();
 	
 	private GameLevel1(){}
@@ -14,25 +13,22 @@ public class GameLevel1 extends GameLevel{
 	}
 	
 	
-	
+	@Override
+	void simpleAttack() {
+		System.out.println(GameLevel1.level+" simple attack : 메롱~~~");
+	}
 
 	@Override
 	void turnAttack() {
-		// TODO Auto-generated method stub
+		System.out.println(GameLevel1.level+" turn attack : "+this.unavailable());
 		
 	}
 
 	@Override
 	void flyingAttack() {
-		// TODO Auto-generated method stub
+		System.out.println(GameLevel1.level+" flying attack : "+this.unavailable());
 		
 	}
 
-	
-	@Override
-	int getLevel() {
-		return GameLevel1.levelInt;
-	}
-	
 
 }
