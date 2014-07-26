@@ -1,6 +1,6 @@
 package game;
 
-public class Player  {
+public class Player {
 	
 	public String name;
 	public GameLevel playerLevel;
@@ -14,6 +14,7 @@ public class Player  {
 		this.playerLevel = GameLevel1.getInstance();}
 
 	public void upgradeLevel(){
+		this.playerLevel = this.playerLevel.upgradeLevel();
 		
 	}
 	

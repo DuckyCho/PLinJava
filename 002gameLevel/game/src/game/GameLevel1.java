@@ -14,21 +14,27 @@ public class GameLevel1 extends GameLevel{
 	
 	
 	@Override
-	void simpleAttack() {
+	public void simpleAttack() {
 		System.out.println(GameLevel1.level+" simple attack : 메롱~~~");
 	}
 
 	@Override
-	void turnAttack() {
+	public void turnAttack() {
 		System.out.println(GameLevel1.level+" turn attack : "+this.unavailable());
 		
 	}
 
 	@Override
-	void flyingAttack() {
+	public void flyingAttack() {
 		System.out.println(GameLevel1.level+" flying attack : "+this.unavailable());
 		
 	}
+	
+	@Override
+	public GameLevel upgradeLevel(){
+		return GameLevel2.getInstance();
+	}
+	
 
 
 }

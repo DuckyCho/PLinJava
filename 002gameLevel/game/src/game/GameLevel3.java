@@ -2,7 +2,6 @@ package game;
 
 public class GameLevel3 extends GameLevel{
 	
-
 	private static String level = new String("Level 3");
 	private static GameLevel3 l3 = new GameLevel3();
 	
@@ -33,6 +32,9 @@ public class GameLevel3 extends GameLevel{
 		
 	}
 
-	
-
+	@Override
+	public GameLevel upgradeLevel(){
+		System.out.println("========level3 end ===========");
+		return null;
+	}
 }

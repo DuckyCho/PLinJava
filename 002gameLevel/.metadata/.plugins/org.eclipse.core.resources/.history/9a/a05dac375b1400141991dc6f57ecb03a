@@ -1,0 +1,39 @@
+package game;
+
+public class GameLevel3 extends GameLevel{
+	
+	private static String level = new String("Level 3");
+	private static GameLevel3 l3 = new GameLevel3();
+	
+	private GameLevel3(){}
+	
+	public static GameLevel3 getInstance(){
+		System.out.println("========level2 end ===========");
+		System.out.println();
+		System.out.println("========level3 start ===========");
+		return l3;
+	}
+	
+	
+	@Override
+	void simpleAttack() {
+		System.out.println(GameLevel3.level+" simple attack : 메롱~메롱~메롱");
+	}
+
+	@Override
+	void turnAttack() {
+		System.out.println(GameLevel3.level+" turn attack : 뒤돌려차기 앞돌려차기");
+		
+	}
+
+	@Override
+	void flyingAttack() {
+		System.out.println(GameLevel3.level+" flying attack :날라차기 휙~~~");
+		
+	}
+
+	@Override
+	public void upgradeLevel(){
+		System.out.println("========level3 end ===========");
+	}
+}

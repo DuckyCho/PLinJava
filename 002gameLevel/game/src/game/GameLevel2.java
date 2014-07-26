@@ -2,7 +2,6 @@ package game;
 
 public class GameLevel2 extends GameLevel{
 	
-
 	private static String level = new String("Level 2");
 	private static GameLevel2 l2 = new GameLevel2();
 	
@@ -32,7 +31,10 @@ public class GameLevel2 extends GameLevel{
 		System.out.println(GameLevel2.level+" flying attack : "+this.unavailable());
 		
 	}
-
+	@Override
+	public GameLevel upgradeLevel(){
+		return GameLevel3.getInstance();
+	}
 	
 
 }
