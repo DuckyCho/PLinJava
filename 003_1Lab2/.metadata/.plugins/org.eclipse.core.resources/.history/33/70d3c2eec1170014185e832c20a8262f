@@ -1,0 +1,10 @@
+package sorting;
+
+public class Main {
+
+	public static void main(String[] args) {
+		NumberSet numset = new NumberSet(I);
+
+	}
+
+}

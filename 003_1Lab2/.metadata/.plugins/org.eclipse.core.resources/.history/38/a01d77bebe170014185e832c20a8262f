@@ -1,0 +1,24 @@
+package sorting;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class NumberSet {
+	
+	public ArrayList<Integer> nums;
+	public String type;
+	
+	public NumberSet(){
+		Random rd = new Random();
+		int forLoop = rd.nextInt(100);
+		nums = new ArrayList<Integer>();
+		for(int i = 0 ; i< forLoop;i++){
+			
+		}
+	}
+	public NumberSet(ArrayList<Integer> a1, String type){
+		if(a1 instanceof ArrayList){
+		this.nums = (ArrayList<Integer>)a1;}
+		this.type = type;
+	}
+}

@@ -1,0 +1,19 @@
+package sorting;
+
+
+
+public abstract class Sort implements ISorting {
+	
+	Sort executeSort;
+	
+	public static NumberSet executeSort (NumberSet numSet){
+		if(numSet.type == "I"){
+			executeSort = InsertionSort.getInstance();
+		}
+		
+		executeSort.sorting(numSet.nums);
+		
+		return numSet;
+	}
+
+}

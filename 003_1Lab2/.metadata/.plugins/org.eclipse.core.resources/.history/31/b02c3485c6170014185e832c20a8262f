@@ -1,0 +1,12 @@
+package sorting;
+
+public class Print {
+	public Print(NumberSet numset){
+		for( int i = 0 ; i < numset.nums.size() ;  i++){
+			System.out.print(numset.nums.get(i));
+			System.out.print("  ");
+		}
+	}
+	
+
+}

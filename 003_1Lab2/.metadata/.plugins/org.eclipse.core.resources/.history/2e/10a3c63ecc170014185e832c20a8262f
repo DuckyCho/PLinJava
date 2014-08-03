@@ -1,0 +1,9 @@
+package sorting;
+
+import java.util.ArrayList;
+
+public interface ISorting {
+	
+	public abstract void sorting(ArrayList<Integer> a1);
+	public abstract String getSortingType();
+}

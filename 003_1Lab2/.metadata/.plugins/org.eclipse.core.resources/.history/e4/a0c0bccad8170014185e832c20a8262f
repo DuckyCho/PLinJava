@@ -1,0 +1,25 @@
+package sorting;
+
+import java.util.List;
+
+public class BubbleSort extends Sort {
+
+	private static BubbleSort bubbleSort = new BubbleSort();
+	private BubbleSort(){}
+	public static Sort getInstance(){
+		return bubbleSort;
+	}
+	
+	
+	@Override
+	public void sorting(List<Integer> a1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getSortingType() {
+		return "B";
+	}
+
+}

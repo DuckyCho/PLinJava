@@ -1,0 +1,26 @@
+package sorting;
+
+
+
+public abstract class Sort implements ISorting {
+	
+	static Sort executeSort;
+	
+	public static NumberSet executeSort (NumberSet numSet){
+		
+		if(numSet.type == "I")
+			executeSort = InsertionSort.getInstance();
+		
+		else if(numSet.type == "B")
+			executeSort = BubbleSort.getInstance();
+		
+		else 
+			executeSort = QuickSort.getInstance();
+		
+		
+		executeSort.sorting(numSet.nums);
+		System.out.println(executeSort.getSortingType());
+		return numSet;
+	}
+
+}

@@ -1,0 +1,18 @@
+package sorting;
+
+public class Main {
+
+	public static void main(String[] args) {
+		NumberSet numset = new NumberSet("I");
+		
+		
+		System.out.print("Before Sort : ");
+		new Print(numset);
+		System.out.println();
+		Sort.executeSort(numset);
+		System.out.print("After Sort : ");
+		new Print(numset);
+		
+	}
+
+}

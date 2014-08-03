@@ -1,0 +1,13 @@
+package sorting;
+
+
+
+public abstract class Sort implements ISorting {
+	
+	public static NumberSet executeSort (NumberSet numSet){
+		if(numSet.type == "I"){
+			
+		}
+	}
+
+}

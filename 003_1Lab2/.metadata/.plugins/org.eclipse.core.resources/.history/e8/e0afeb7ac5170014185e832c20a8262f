@@ -1,0 +1,20 @@
+package sorting;
+
+public class Main {
+
+	public static void main(String[] args) {
+		NumberSet numset = new NumberSet("I");
+		
+		
+		System.out.println("Before Sort");
+		new Print(numset);
+		System.out.println();
+		
+		Sort.executeSort(numset);
+		
+		System.out.println("After Sort");
+		new Print(numset);
+		
+	}
+
+}

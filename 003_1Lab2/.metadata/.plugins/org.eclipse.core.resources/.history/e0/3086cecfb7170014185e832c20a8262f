@@ -1,0 +1,9 @@
+package sorting;
+
+import java.util.ArrayList;
+
+public interface ISorting {
+	
+	public abstract ArrayList<Integer> sorting(ArrayList<Integer>);
+
+}

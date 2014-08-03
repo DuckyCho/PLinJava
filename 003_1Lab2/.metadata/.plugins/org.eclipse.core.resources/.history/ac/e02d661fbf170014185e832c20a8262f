@@ -1,0 +1,13 @@
+package sorting;
+
+import java.util.ArrayList;
+
+public abstract class Sort implements ISorting {
+	
+	public static ArrayList<Integer> executeSort (NumberSet numSet){
+		if(numSet.type == "I"){
+			
+		}
+	}
+
+}

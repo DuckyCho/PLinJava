@@ -1,0 +1,9 @@
+package sorting;
+
+import java.util.ArrayList;
+
+public class NumberSet {
+	
+	public ArrayList<Integer> nums;
+	public String type;
+}
