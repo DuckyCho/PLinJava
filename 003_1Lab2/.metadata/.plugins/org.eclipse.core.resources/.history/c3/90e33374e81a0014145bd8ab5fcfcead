@@ -1,0 +1,27 @@
+package sorting;
+
+import java.util.List;
+
+public class QuickSort extends Sort {
+	
+	
+	private static QuickSort quickSort = new QuickSort();
+	private QuickSort(){}
+	public static Sort getInstance(){
+		return quickSort;
+	}
+	
+	@Override
+	public void sorting(List<Integer> a1) {
+		if(a1.size() == 0 || a1.size() == 1){
+			
+		}
+		
+	}
+
+	@Override
+	public String getSortingType() {
+		return "Q";
+	}
+
+}

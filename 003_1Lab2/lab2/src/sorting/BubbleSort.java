@@ -15,16 +15,17 @@ public class BubbleSort extends Sort {
 	@Override
 	public void sorting(List<Integer> a1) {
 		int size = a1.size()-1;
-		while(size > 0){
-			for( int i = size ; i >0 ; i--){
-				if(a1.get(i) < a1.get(i-1))
-					Collections.swap(a1, i, i-1);
+		int j;
+		
+		for(int i = 0 ; i < a1.size();i++){
+			j = size;
+			for(  ; j >i ; j--){
+				if(a1.get(j) < a1.get(j-1))
+					Collections.swap(a1, j, j-1);
 				
 				else
 					continue;
 			}
-			
-			size -= 1;
 		}
 		
 	}
