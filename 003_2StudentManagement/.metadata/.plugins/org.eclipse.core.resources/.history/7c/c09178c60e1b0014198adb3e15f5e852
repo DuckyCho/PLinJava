@@ -1,0 +1,12 @@
+package studentManagementSystem;
+
+public class Student {
+
+	public String name;
+	public int score;
+	public String Grade;
+	
+	public Student(){
+		
+	}
+}

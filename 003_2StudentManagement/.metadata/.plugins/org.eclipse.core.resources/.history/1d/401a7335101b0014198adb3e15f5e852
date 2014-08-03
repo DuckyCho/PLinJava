@@ -1,0 +1,25 @@
+package studentManagementSystem;
+
+public class Score {
+
+	private int score;
+	private String grade;
+	
+	public Score(){}
+	
+	public Score(int score){
+		this.score = score;
+	}
+		
+	public void setScore(int score){
+		this.score = score;
+	}
+	
+	public int getScore(){
+		return this.score;
+	}
+	
+	public String getGrade(){
+		return this.grade;
+	}
+}

@@ -1,0 +1,19 @@
+package studentManagementSystem;
+
+public class Student {
+
+	private String name;
+	private int id;
+	private static int idConstructor = 141213;
+	private String major;
+	private Score score;
+		
+	public Student(String name){
+		this.id = idConstructor;
+		idConstructor++;
+		this.name = name;
+		this.score = new Score();
+	}
+	
+	
+}
