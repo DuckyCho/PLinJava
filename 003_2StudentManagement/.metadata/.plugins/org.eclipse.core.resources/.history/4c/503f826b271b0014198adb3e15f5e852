@@ -38,12 +38,12 @@ public class Student {
 	public StringBuilder getStudentInfo(){
 		StringBuilder studentInfo = new StringBuilder();
 		studentInfo.append(name);
-		studentInfo.append("	"+id);
-		studentInfo.append("	"+major);
-		studentInfo.append("	"+scoreList.get(Subjectcode.getSubjectcode("math")).getScore());
-		studentInfo.append("	"+scoreList.get(Subjectcode.getSubjectcode("english")).getScore());
-		studentInfo.append("	"+scoreList.get(Subjectcode.getSubjectcode("math")).getGrade());
-		studentInfo.append("	"+scoreList.get(Subjectcode.getSubjectcode("english")).getGrade());
+		studentInfo.append(" "+id);
+		studentInfo.append(" "+major);
+		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("math")).getScore());
+		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("english")).getScore());
+		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("math")).getGrade());
+		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("english")).getGrade());
 		
 		return studentInfo;
 	}

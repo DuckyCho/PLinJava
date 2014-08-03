@@ -9,14 +9,12 @@ public class Main {
 		Student s3 = new Student("주원","math",76,60);
 		Student s4 = new Student("김우빈","math",85,89);
 		Student s5 = new Student("이민호","english",90,95);
-
 		Evaluate.evaluateStudent(s1);
 		Evaluate.evaluateStudent(s2);
 		Evaluate.evaluateStudent(s3);
 		Evaluate.evaluateStudent(s4);
 		Evaluate.evaluateStudent(s5);
 		
-		System.out.println("이름	학번	전공	수학점수	영어점수	수학평점	영어평점");
 		System.out.println(s1.getStudentInfo());
 		System.out.println(s2.getStudentInfo());
 		System.out.println(s3.getStudentInfo());

@@ -16,7 +16,6 @@ public class Main {
 		Evaluate.evaluateStudent(s4);
 		Evaluate.evaluateStudent(s5);
 		
-		System.out.println("이름	학번	전공	수학점수	영어점수	수학평점	영어평점");
 		System.out.println(s1.getStudentInfo());
 		System.out.println(s2.getStudentInfo());
 		System.out.println(s3.getStudentInfo());
