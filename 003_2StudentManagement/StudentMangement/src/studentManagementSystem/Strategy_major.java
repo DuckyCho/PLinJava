@@ -4,14 +4,17 @@ import java.util.HashMap;
 
 public class Strategy_major implements IStrategy {
 	
+	private static HashMap<Integer,String> scoreMap = new HashMap<Integer,String>();
 	private static Strategy_major sM = new Strategy_major();
-	private HashMap<Integer,String> scoreMap = new HashMap<Integer,String>();
+	
+	
+	
 	private Strategy_major(){
-		sM.scoreMap.put(9,"A");
-		sM.scoreMap.put(8,"B");
-		sM.scoreMap.put(7,"C");
-		sM.scoreMap.put(6,"D");
-		sM.scoreMap.put(5,"F");
+		scoreMap.put(9,"A");
+		scoreMap.put(8,"B");
+		scoreMap.put(7,"C");
+		scoreMap.put(6,"D");
+		scoreMap.put(5,"F");
 	}
 	
 	
@@ -22,7 +25,7 @@ public class Strategy_major implements IStrategy {
 			return "S";
 		}
 		else{
-			return sM.scoreMap.get(score/10);
+			return Strategy_major.scoreMap.get(score/10);
 		}
 	}
 

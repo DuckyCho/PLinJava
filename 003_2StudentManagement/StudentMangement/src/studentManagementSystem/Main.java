@@ -15,7 +15,11 @@ public class Main {
 		Evaluate.evaluateStudent(s4);
 		Evaluate.evaluateStudent(s5);
 		
-		System.out.println()
+		System.out.println(s1.getStudentInfo());
+		System.out.println(s2.getStudentInfo());
+		System.out.println(s3.getStudentInfo());
+		System.out.println(s4.getStudentInfo());
+		System.out.println(s5.getStudentInfo());
 	}
 	
 

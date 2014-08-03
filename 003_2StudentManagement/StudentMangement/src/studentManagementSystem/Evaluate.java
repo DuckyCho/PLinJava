@@ -10,18 +10,23 @@ public class Evaluate {
 	public static void evaluateStudent (Student s1){
 		major = s1.getMajor();
 		scoreList = s1.getScoreList();
-		Object s;
+		Strategy_major s = Strategy_major.getInstance();
+		String grade;
 		
 		for(int i =  0 ; i < scoreList.size(); i++){
 			
 			if(i == Subjectcode.getSubjectcode(major)){
 				s = Strategy_major.getInstance();
-				scoreList.get(i).setGrade(((Strategy_major) s).getGrade(scoreList.get(i).getScore()));
+				grade = s.getGrade(scoreList.get(i).getScore());
+				scoreList.get(i).setGrade(grade);
 			}
+			/*
 			else{
 				s = Strategy_nonMajor.getInstance();
-				scoreList.get(i).setGrade(((Strategy_nonMajor) s).getGrade(scoreList.get(i).getScore()));
+				grade = s.getGrade(scoreList.get(i).getScore());
+				scoreList.get(i).setGrade(grade);
 			}
+			*/
 						
 			
 		}

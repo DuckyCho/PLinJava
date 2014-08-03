@@ -8,7 +8,7 @@ public class Student {
 	private int id;
 	private static int idConstructor = 141213;
 	private String major;
-	private ArrayList<Score> scoreList = new ArrayList<Score>();
+	private ArrayList<Score> scoreList;
 	
 		
 	public Student(String name,String major, int mathScore, int engScore){
@@ -16,8 +16,9 @@ public class Student {
 		idConstructor++;
 		this.name = name;
 		this.major = major;
-		scoreList.add(Subjectcode.getSubjectcode("math"), new Score(mathScore));
-		scoreList.add(Subjectcode.getSubjectcode("english"), new Score(engScore));
+		this.scoreList = new ArrayList<Score>();
+		this.scoreList.add(Subjectcode.getSubjectcode("math"), new Score(mathScore));
+		this.scoreList.add(Subjectcode.getSubjectcode("english"), new Score(engScore));
 		
 	}
 	
@@ -40,9 +41,9 @@ public class Student {
 		studentInfo.append(" "+id);
 		studentInfo.append(" "+major);
 		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("math")).getScore());
-		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("eng")).getScore());
+		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("english")).getScore());
 		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("math")).getGrade());
-		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("eng")).getGrade());
+		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("english")).getGrade());
 		
 		return studentInfo;
 	}

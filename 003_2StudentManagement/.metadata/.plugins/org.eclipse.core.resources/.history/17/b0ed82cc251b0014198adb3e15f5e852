@@ -1,0 +1,23 @@
+package studentManagementSystem;
+
+import java.util.HashMap;
+
+public class Subjectcode {
+	
+	private static Subjectcode s1 = new Subjectcode();
+	private HashMap<String,Integer> subjectCode;
+	
+	private Subjectcode(){
+		subjectCode = new HashMap<String,Integer>();
+		this.subjectCode.put("math",0);
+		this.subjectCode.put("english",1);
+	}
+	
+	public static int getSubjectcode(String subject){
+		return Subjectcode.getInstance().subjectCode.get(subject);
+	}
+	
+	public static Subjectcode getInstance(){
+		return s1;
+	}
+}
