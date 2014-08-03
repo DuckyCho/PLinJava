@@ -20,13 +20,13 @@ public class Evaluate {
 				grade = s.getGrade(scoreList.get(i).getScore());
 				scoreList.get(i).setGrade(grade);
 			}
-			
+			/*
 			else{
 				s = Strategy_nonMajor.getInstance();
 				grade = s.getGrade(scoreList.get(i).getScore());
 				scoreList.get(i).setGrade(grade);
 			}
-			
+			*/
 						
 			
 		}

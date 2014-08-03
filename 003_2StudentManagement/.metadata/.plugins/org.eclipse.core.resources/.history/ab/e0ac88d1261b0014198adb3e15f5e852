@@ -20,7 +20,7 @@ public class Strategy_nonMajor implements IStrategy {
 			return "F";
 		}
 		else{
-			return Strategy_nonMajor.scoreMap.get(score/10);
+			return sNM.scoreMap.get(score/10);
 		}
 	}
 
