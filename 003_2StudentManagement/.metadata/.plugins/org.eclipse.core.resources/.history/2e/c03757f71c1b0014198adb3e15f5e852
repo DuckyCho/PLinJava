@@ -1,0 +1,7 @@
+package studentManagementSystem;
+
+public class Main {
+	
+	Student s1 = new Student();
+
+}

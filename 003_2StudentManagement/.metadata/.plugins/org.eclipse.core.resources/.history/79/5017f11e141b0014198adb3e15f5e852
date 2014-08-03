@@ -1,0 +1,37 @@
+package studentManagementSystem;
+
+import java.util.ArrayList;
+
+public class Student {
+
+	private String name;
+	private int id;
+	private static int idConstructor = 141213;
+	private String major;
+	private ArrayList<Score> scoreList = new ArrayList<Score>();
+	
+		
+	public Student(String name,String major, int mathScore, int engScore){
+		this.id = idConstructor;
+		idConstructor++;
+		this.name = name;
+		this.major = major;
+		scoreList.add(Subjectcode.getSubjectcode("math"),new Score(mathScore));
+		scoreList.add(Subjectcode.getSubjectcode("english"),new Score(engScore));
+		
+	}
+	
+	
+	public StringBuilder getStudentInfo(){
+		StringBuilder studentInfo = new StringBuilder();
+		
+		studentInfo.append(name);
+		studentInfo.append(" "+id);
+		studentInfo.append(" "+major);
+		
+		
+		return studentInfo;
+	}
+	
+	
+}

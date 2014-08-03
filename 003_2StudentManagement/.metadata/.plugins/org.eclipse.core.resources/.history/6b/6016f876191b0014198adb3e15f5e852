@@ -1,0 +1,10 @@
+package studentManagementSystem;
+
+public class Evaluate {
+
+	public String major;
+	public Strategy;
+	public Evaluate(Student s1){
+		s1.getMajor();
+	}
+}

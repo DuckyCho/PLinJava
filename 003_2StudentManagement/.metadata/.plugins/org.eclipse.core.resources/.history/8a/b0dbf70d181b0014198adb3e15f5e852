@@ -1,0 +1,6 @@
+package studentManagementSystem;
+
+abstract class Strategy implements IStrategy{
+
+	abstract Strategy();
+}

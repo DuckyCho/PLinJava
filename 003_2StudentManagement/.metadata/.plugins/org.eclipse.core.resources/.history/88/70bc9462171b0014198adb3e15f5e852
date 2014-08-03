@@ -1,0 +1,27 @@
+package studentManagementSystem;
+
+import java.util.HashMap;
+
+public class Strategy_nonMajor {
+
+	private Strategy_nonMajor sNM = new Strategy_nonMajor();
+	private HashMap<Integer,String> scoreMap = new HashMap<Integer,String>();
+	private Strategy_major(){
+		sNM.scoreMap.put(9,"A");
+		sNM.scoreMap.put(8,"B");
+		sNM.scoreMap.put(7,"C");
+		sNM.scoreMap.put(6,"D");
+		sNM.scoreMap.put(5,"F");
+	}
+	
+	@Override
+	public String getGrade(int score) {
+		if(score >=  95){
+			return "S";
+		}
+		else{
+			return sM.scoreMap.get(score/10);
+		}
+	}
+	
+}

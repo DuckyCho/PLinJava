@@ -1,0 +1,14 @@
+package studentManagementSystem;
+
+public class Evaluate {
+
+	public String major;
+	public ArrayList<Score> scoreList;
+	
+	public Evaluate(Student s1){
+		for ( int i = s1.)
+		major = s1.getMajor();
+		scoreList = s1.getScoreList();
+		
+	}
+}

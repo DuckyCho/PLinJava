@@ -1,0 +1,25 @@
+package studentManagementSystem;
+
+import java.util.HashMap;
+
+public class Strategy_major implements IStrategy {
+	
+	private Strategy_major sM = new Strategy_major();
+	private HashMap<Double,String> scoreMap = new HashMap<Double,String>();
+	private Strategy_major(){
+		sM.scoreMap.put(9.5,"S");
+		sM.scoreMap.put(9.0,"A");
+		sM.scoreMap.put(8.0,"B");
+		sM.scoreMap.put(7.0,"C");
+		sM.scoreMap.put(6.0,"D");
+		sM.scoreMap.put(5.0,"F");
+	}
+	
+	@Override
+	public String getGrade(int score) {
+		double scoreDouble = score/10;
+		return null;
+	}
+	
+	
+}

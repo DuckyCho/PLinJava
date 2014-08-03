@@ -1,0 +1,7 @@
+package studentManagementSystem;
+
+public interface Strategy {
+	
+	public String getGrade(int score);
+
+}

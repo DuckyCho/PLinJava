@@ -1,0 +1,12 @@
+package studentManagementSystem;
+
+import java.util.HashMap;
+
+public class Subjectcode {
+	private static Subjectcode s1 = new Subjectcode();
+	private static HashMap<String,Integer> subjectCode = new HashMap<String,Integer>();
+	
+	private Subjectcode(){
+		
+	}
+}

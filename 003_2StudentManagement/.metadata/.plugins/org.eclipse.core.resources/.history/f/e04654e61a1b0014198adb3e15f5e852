@@ -1,0 +1,8 @@
+package studentManagementSystem;
+
+abstract class Strategy {
+	
+	public Strategy(){}
+	abstract void setStrategy();
+	abstract Strategy getStrategy();
+}

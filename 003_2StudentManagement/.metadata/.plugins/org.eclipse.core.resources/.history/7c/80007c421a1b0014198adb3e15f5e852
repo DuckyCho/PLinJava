@@ -1,0 +1,13 @@
+package studentManagementSystem;
+
+public class Evaluate {
+
+	public String major;
+	public Score score;
+	
+	public Evaluate(Student s1){
+		major = s1.getMajor();
+		score = s1.getScore(major);
+		
+	}
+}

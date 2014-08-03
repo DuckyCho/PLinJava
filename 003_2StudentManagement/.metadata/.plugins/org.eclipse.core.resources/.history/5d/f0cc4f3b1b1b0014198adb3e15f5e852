@@ -1,0 +1,27 @@
+package studentManagementSystem;
+
+import java.util.HashMap;
+
+public class Strategy_nonMajor extends Strategy implements IStrategy {
+
+	private Strategy_nonMajor sNM = new Strategy_nonMajor();
+	private HashMap<Integer,String> scoreMap = new HashMap<Integer,String>();
+	private Strategy_nonMajor(){
+		sNM.scoreMap.put(9,"A");
+		sNM.scoreMap.put(8,"B");
+		sNM.scoreMap.put(7,"C");
+		sNM.scoreMap.put(6,"D");
+		sNM.scoreMap.put(5, "D");
+	}
+	
+	@Override
+	public String getGrade(int score) {
+		if(score <  55){
+			return "F";
+		}
+		else{
+			return sNM.scoreMap.get(score/10);
+		}
+	}
+	
+}

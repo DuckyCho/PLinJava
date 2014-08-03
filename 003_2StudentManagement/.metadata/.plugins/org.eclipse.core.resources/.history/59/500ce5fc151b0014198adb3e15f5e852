@@ -1,0 +1,8 @@
+package studentManagementSystem;
+
+public interface IStrategy {
+	
+	private abstract void setStrategy();
+	public abstract String getGrade(int score);
+
+}

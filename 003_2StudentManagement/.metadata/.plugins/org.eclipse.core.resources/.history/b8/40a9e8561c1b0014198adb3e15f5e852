@@ -1,0 +1,28 @@
+package studentManagementSystem;
+
+import java.util.ArrayList;
+
+public class Evaluate {
+
+	public String major;
+	public ArrayList<Score> scoreList;
+	
+	public Evaluate(Student s1){
+		major = s1.getMajor();
+		scoreList = s1.getScoreList();
+	
+		
+		for(int i =  0 ; i < scoreList.size(); i++){
+			object s;
+			if(i == Subjectcode.getSubjectcode(major)){
+				Strategy_major s = Strategy_major.getInstance();
+			}
+			else{
+				Strategy_nonMajor s = Strategy_nonMajor.getInstance();
+			}
+						
+			scoreList.get(i).setGrade(s.getGrade(scoreList.get(i).getScore()));
+		}
+		
+	}
+}

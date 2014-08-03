@@ -1,21 +1,50 @@
 package studentManagementSystem;
 
+import java.util.ArrayList;
+
 public class Student {
 
 	private String name;
 	private int id;
 	private static int idConstructor = 141213;
 	private String major;
-	private Score engScore;
-	private Score mathScore;
+	private ArrayList<Score> scoreList = new ArrayList<Score>();
+	
 		
 	public Student(String name,String major, int mathScore, int engScore){
 		this.id = idConstructor;
 		idConstructor++;
 		this.name = name;
-		this.engScore = new Score(engScore);
-		this.mathScore = new Score(mathScore);
 		this.major = major;
+		scoreList.add(Subjectcode.getSubjectcode("math"), new Score(mathScore));
+		scoreList.add(Subjectcode.getSubjectcode("english"), new Score(engScore));
+		
+	}
+	
+	public String getMajor(){
+		return this.major;
+	}
+	
+	public Score getScore(String subject){
+		return this.scoreList.get(Subjectcode.getSubjectcode(subject));
+	}
+	
+	public ArrayList<Score> getScoreList (){
+		return scoreList;
+	}
+	
+	
+	public StringBuilder getStudentInfo(){
+		StringBuilder studentInfo = new StringBuilder();
+		studentInfo.append(name);
+		studentInfo.append(" "+id);
+		studentInfo.append(" "+major);
+		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("math")).getScore());
+		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("eng")).getScore());
+		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("math")).getGrade());
+		studentInfo.append(" "+scoreList.get(Subjectcode.getSubjectcode("eng")).getGrade());
+		
+		return studentInfo;
 	}
 	
 	

@@ -2,8 +2,10 @@ package studentManagementSystem;
 
 public class Score {
 
+	
 	private int score;
 	private String grade;
+	
 	
 	public Score(int score){
 		this.score = score;
