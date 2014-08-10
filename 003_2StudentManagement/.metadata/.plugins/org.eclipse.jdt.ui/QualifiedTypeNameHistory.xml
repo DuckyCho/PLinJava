@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="studentManagementSystem.Subjectcode"/>
+<fullyQualifiedTypeName name="studentManagementSystem.IStrategy"/>
+<fullyQualifiedTypeName name="studentManagementSystem.Evaluate"/>
+<fullyQualifiedTypeName name="studentManagementSystem.Strategy_major"/>
+<fullyQualifiedTypeName name="studentManagementSystem.Strategy_nonMajor"/>
+</qualifiedTypeNameHistroy>
